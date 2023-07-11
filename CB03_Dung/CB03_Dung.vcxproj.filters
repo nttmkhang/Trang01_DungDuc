@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CB03.cpp">
+    <ClCompile Include="CB03_Dung.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

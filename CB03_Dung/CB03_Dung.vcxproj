@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{ae114fff-af35-4c27-8068-005f27aa6de9}</ProjectGuid>
-    <RootNamespace>CB03</RootNamespace>
+    <ProjectGuid>{090621d7-2aaf-4272-948d-185dc36c8787}</ProjectGuid>
+    <RootNamespace>CB03Dung</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="CB03.cpp" />
+    <ClCompile Include="CB03_Dung.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
