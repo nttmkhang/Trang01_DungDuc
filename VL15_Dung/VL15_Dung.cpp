@@ -13,6 +13,7 @@
 #include <algorithm>
 using namespace std;
 
+bool KtHopLe(int, int);
 int ucln(int, int);
 void RutGon(int, int);
 
@@ -26,6 +27,13 @@ int main()
 
 	RutGon(a, b);
 	return 0;
+}
+
+bool KtHopLe(int x, int y)
+{
+	if (y == 0)
+		return false;
+	return true;
 }
 
 int ucln(int x, int y)
@@ -42,6 +50,11 @@ int ucln(int x, int y)
 
 void RutGon(int x, int y)
 {
-	int UCLN = ucln(x, y);
-	cout << x / UCLN << " " << y / UCLN;
+	if (KtHopLe(x, y))
+	{
+		int UCLN = ucln(x, y);
+		cout << x / UCLN << " " << y / UCLN;
+	}
+	else
+		cout << "INVALID";
 }
