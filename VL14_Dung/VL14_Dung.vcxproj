@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{305889a2-60a1-4063-9ddc-bfc3d3b3bdca}</ProjectGuid>
-    <RootNamespace>VL14</RootNamespace>
+    <ProjectGuid>{0738dbf8-57fa-454e-8430-6a1eee23bacb}</ProjectGuid>
+    <RootNamespace>VL14Dung</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="VL14.cpp" />
+    <ClCompile Include="VL14_Dung.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
