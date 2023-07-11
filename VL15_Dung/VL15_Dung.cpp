@@ -53,7 +53,13 @@ void RutGon(int x, int y)
 	if (KtHopLe(x, y))
 	{
 		int UCLN = ucln(x, y);
-		cout << x / UCLN << " " << y / UCLN;
+		if (x % y == 0)
+			cout << x / y;
+		else
+			if (x * y > 0)
+				cout << abs(x / UCLN) << " " << abs(y / UCLN);
+			else 
+				cout << -abs(x / UCLN) << " " << abs(y / UCLN);
 	}
 	else
 		cout << "INVALID";
