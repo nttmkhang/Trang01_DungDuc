@@ -24,7 +24,6 @@ int main()
 	int b;
 	cin >> b;
 
-
 	RutGon(a, b);
 	return 0;
 }
