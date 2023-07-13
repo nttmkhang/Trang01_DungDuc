@@ -30,7 +30,6 @@ string DemChuSo(string x)
     int dem = x.length();
     if (x[0] == '-')
         dem--;
-    
     stream << dem;
     return stream.str();
 }
