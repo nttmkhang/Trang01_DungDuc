@@ -10,7 +10,7 @@
 #include <algorithm>
 using namespace std;
 
-string GiaiThua(long long);
+long long GiaiThua(long long);
 
 int main()
 {
@@ -20,12 +20,11 @@ int main()
 	return 0;
 }
 
-string GiaiThua(long long x)
+long long GiaiThua(long long x)
 {
 	stringstream stream;
 	long long T = 1;
 	for (int i = 1; i <= x; i++)
 		T *= i;
-	stream << T;
-	return stream.str();
+	return T;
 }

@@ -20,9 +20,6 @@ int main()
 string ChenhLech(int x, int y)
 {
 	stringstream stream;
-	if (x > y)
-		stream << x - y;
-	else
-		stream << y - x;
+	stream << abs(x - y);
 	return stream.str();
 }
