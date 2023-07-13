@@ -13,7 +13,7 @@
 #include <algorithm>
 using namespace std;
 
-string DemChuSo(string);
+int DemChuSo(string);
 
 int main()
 {
@@ -24,12 +24,10 @@ int main()
     return 0;
 }
 
-string DemChuSo(string x)
+int DemChuSo(string x)
 {
-    stringstream stream;
     int dem = x.length();
     if (x[0] == '-')
         dem--;
-    stream << dem;
-    return stream.str();
+    return dem;
 }
