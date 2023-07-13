@@ -13,7 +13,7 @@
 #include <algorithm>
 using namespace std;
 
-string Tong(long);
+long long Tong(long);
 
 int main()
 {
@@ -23,9 +23,8 @@ int main()
 	return 0;
 }
 
-string Tong(long x)
+long long Tong(long x)
 {
-	stringstream stream;
 	long s = 0;
 	int dau = +1;
 	for (int i = 1; i <= 3 * x + 1; i++)
@@ -33,6 +32,5 @@ string Tong(long x)
 		s = s + dau * i;
 		dau = -dau;
 	}
-	stream << s;
-	return stream.str();
+	return s;
 }
