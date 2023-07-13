@@ -9,7 +9,7 @@
 #include <vector>
 #include <algorithm>
 using namespace std;
-string Tong(int);
+long long Tong(int);
 
 int main()
 {
@@ -19,12 +19,10 @@ int main()
 	return 0;
 }
 
-string Tong(int x)
+long long Tong(int x)
 {
-	stringstream stream;
-	int s = 0;
+	long long s = 0;
 	for (int i = 2; i <= x; i++)
 		s += i;
-	stream << s + 2 * x;
-	return stream.str();
+	return s + 2 * x;
 }

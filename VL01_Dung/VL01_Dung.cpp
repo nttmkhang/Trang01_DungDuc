@@ -10,7 +10,7 @@
 #include <algorithm>
 using namespace std;
 
-void LietKe(long, long);
+string LietKe(long, long);
 
 int main()
 {
@@ -22,8 +22,10 @@ int main()
 	return 0;
 }
 
-void LietKe(long x, long y)
+string LietKe(long x, long y)
 {
+	stringstream stream;
 	for (long i = x; i <= y; i++)
-		cout << i << " ";
+		stream << i << " ";
+	return stream.str();
 }

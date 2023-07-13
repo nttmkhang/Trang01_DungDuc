@@ -10,22 +10,20 @@
 #include <algorithm>
 using namespace std;
 
-string Tong(int);
+double Tong(int);
 
 int main()
 {
 	int n;
 	cin >> n;
-	cout << Tong(n);
+	cout << fixed << setprecision(4) << Tong(n);
 	return 0;
 }
 
-string Tong(int x)
+double Tong(int x)
 {
-	stringstream stream;
-	float s = 0;
+	double s = 0;
 	for (int i = 2; i <= x; i++)
-		s += (float)1 / i;
-	stream << fixed << setprecision(4) << s;
-	return stream.str();
+		s += (double)1 / i;
+	return s;
 }

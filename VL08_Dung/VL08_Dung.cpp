@@ -10,7 +10,7 @@
 #include <algorithm>
 using namespace std;
 
-string TongChan(int, int);
+long TongChan(int, int);
 
 int main()
 {
@@ -22,13 +22,11 @@ int main()
 	return 0;
 }
 
-string TongChan(int x, int y)
+long TongChan(int x, int y)
 {
-	stringstream stream;
-	int s = 0;
+	long s = 0;
 	for (int i = min(x, y); i <= max(x, y); i++)
 		if (i % 2 == 0)
 			s += i;
-	stream << s;
-	return stream.str();
+	return s;
 }

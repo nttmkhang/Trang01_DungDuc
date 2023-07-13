@@ -10,7 +10,7 @@
 #include <algorithm>
 using namespace std;
 
-string Tong(long);
+long long Tong(long);
 
 int main()
 {
@@ -20,12 +20,11 @@ int main()
 	return 0;
 }
 
-string Tong(long x)
+long long Tong(long x)
 {
 	stringstream stream;
 	if (x % 2 == 0)
-		stream << (x / 2) * (x + 1);
+		return (x / 2) * (x + 1);
 	else
-		stream << ((x + 1) / 2) * x;
-	return stream.str();
+		return ((x + 1) / 2) * x;
 }
